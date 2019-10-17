@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="5" name="Cadastramento de avaliação SIRIC" skipped="0" tests="5" time="3.34" timestamp="2019-10-16 01:49:23"><testcase name="Testar novas funcionalidades"><failure message="expected:&lt;[654321880]&gt; but was:&lt;[]&gt;" type="java.lang.AssertionError">expected:&lt;[654321880]&gt; but was:&lt;[]&gt;</failure><system-err>expected:&lt;[654321880]&gt; but was:&lt;[]&gt;&#13;
+com.serene.tests.features.steps.SiricAPISteps.verificaValidacaoRetorno(SiricAPISteps.java:126)&#13;
+com.serene.tests.features.steps.SiricStepDefn.verifica_tentativa_cadastro_avaliacao_existente(SiricStepDefn.java:139)&#13;
+✽.verifico a validação da tentativa de cadastro da avaliação "654321880" já existente, no arquivo "xml"(src/test/resources/features/Siric/Siric.feature:20)&#13;
+</system-err></testcase><testcase name="Cadastrar avaliação"><failure message="expected:&lt;[Ja existe uma avaliacao de risco com o codigo 654321880.]&gt; but was:&lt;[ERRO DE INFRAESTRUTURA]&gt;" type="java.lang.AssertionError">expected:&lt;[Ja existe uma avaliacao de risco com o codigo 654321880.]&gt; but was:&lt;[ERRO DE INFRAESTRUTURA]&gt;</failure><system-err>expected:&lt;[Ja existe uma avaliacao de risco com o codigo 654321880.]&gt; but was:&lt;[ERRO DE INFRAESTRUTURA]&gt;&#13;
+com.serene.tests.features.steps.SiricAPISteps.verificaRetorno(SiricAPISteps.java:110)&#13;
+com.serene.tests.features.steps.SiricStepDefn.verifica_retornoEntao(SiricStepDefn.java:128)&#13;
+✽.verifico o retorno do arquivo "xml"(src/test/resources/features/Siric/Siric.feature:30)&#13;
+</system-err></testcase><testcase name="Cadastrar avaliação existente"><failure message="expected:&lt;[Ja existe uma avaliacao de risco com o codigo 654321880.]&gt; but was:&lt;[ERRO DE INFRAESTRUTURA]&gt;" type="java.lang.AssertionError">expected:&lt;[Ja existe uma avaliacao de risco com o codigo 654321880.]&gt; but was:&lt;[ERRO DE INFRAESTRUTURA]&gt;</failure><system-err>expected:&lt;[Ja existe uma avaliacao de risco com o codigo 654321880.]&gt; but was:&lt;[ERRO DE INFRAESTRUTURA]&gt;&#13;
+com.serene.tests.features.steps.SiricAPISteps.verificaValidacaoRetorno(SiricAPISteps.java:127)&#13;
+com.serene.tests.features.steps.SiricStepDefn.verifica_tentativa_cadastro_avaliacao_existente(SiricStepDefn.java:139)&#13;
+✽.verifico a validação da tentativa de cadastro da avaliação "654321880" já existente, no arquivo "xml"(src/test/resources/features/Siric/Siric.feature:41)&#13;
+</system-err></testcase><testcase name="Cadastrar avaliação com conjuge"><failure message="expected:&lt;[Ja existe uma avaliacao de risco com o codigo 99997.]&gt; but was:&lt;[ERRO DE INFRAESTRUTURA]&gt;" type="java.lang.AssertionError">expected:&lt;[Ja existe uma avaliacao de risco com o codigo 99997.]&gt; but was:&lt;[ERRO DE INFRAESTRUTURA]&gt;</failure><system-err>expected:&lt;[Ja existe uma avaliacao de risco com o codigo 99997.]&gt; but was:&lt;[ERRO DE INFRAESTRUTURA]&gt;&#13;
+com.serene.tests.features.steps.SiricAPISteps.verificaRetornoComConjuge(SiricAPISteps.java:143)&#13;
+com.serene.tests.features.steps.SiricStepDefn.verifica_retorno_com_conjuge(SiricStepDefn.java:146)&#13;
+✽.verifico o retorno da avaliação com conjuge, número "99997", do arquivo "xml"(src/test/resources/features/Siric/Siric.feature:52)&#13;
+</system-err></testcase><testcase name="Cadastrar avaliação sem conjuge"><failure message="expected:&lt;[Ja existe uma avaliacao de risco com o codigo 99998.]&gt; but was:&lt;[ERRO DE INFRAESTRUTURA]&gt;" type="java.lang.AssertionError">expected:&lt;[Ja existe uma avaliacao de risco com o codigo 99998.]&gt; but was:&lt;[ERRO DE INFRAESTRUTURA]&gt;</failure><system-err>expected:&lt;[Ja existe uma avaliacao de risco com o codigo 99998.]&gt; but was:&lt;[ERRO DE INFRAESTRUTURA]&gt;&#13;
+com.serene.tests.features.steps.SiricAPISteps.verificaRetornoSemConjuge(SiricAPISteps.java:159)&#13;
+com.serene.tests.features.steps.SiricStepDefn.verifica_retorno_sem_conjuge(SiricStepDefn.java:153)&#13;
+✽.verifico o retorno da avaliação sem conjuge, número "99998", do arquivo "xml"(src/test/resources/features/Siric/Siric.feature:63)&#13;
+</system-err></testcase></testsuite>

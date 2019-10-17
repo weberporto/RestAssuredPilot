@@ -1,0 +1,6 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Cadastramento de avaliação SIRIC","Testar novas funcionalidades","PENDING","2019-10-15T16:04:16.473-03:00[America/Sao_Paulo]","0.0","1.81"
+"Cadastramento de avaliação SIRIC","Cadastrar avaliação","SUCCESS","2019-10-15T16:04:18.281-03:00[America/Sao_Paulo]","0.0","1.6"
+"Cadastramento de avaliação SIRIC","Cadastrar avaliação existente","SUCCESS","2019-10-15T16:04:19.88-03:00[America/Sao_Paulo]","0.0","0.32"
+"Cadastramento de avaliação SIRIC","Cadastrar avaliação com conjuge","SUCCESS","2019-10-15T16:04:20.199-03:00[America/Sao_Paulo]","0.0","0.43"
+"Cadastramento de avaliação SIRIC","Cadastrar avaliação sem conjuge","SUCCESS","2019-10-15T16:04:20.632-03:00[America/Sao_Paulo]","0.0","0.3"

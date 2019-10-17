@@ -1,0 +1,13 @@
+com\serene\tests\features\steps\Principal.class
+com\serene\tests\features\steps\structureXML\AvaliacaoRisco.class
+com\serene\tests\features\steps\structureXML\GrupoHabitacional.class
+com\serene\tests\features\steps\SiricAPISteps.class
+com\serene\tests\features\steps\structureXML\Produto.class
+com\resources\Arquivo.class
+com\serene\tests\features\steps\SiricStepDefn.class
+com\serene\tests\features\steps\structureXML\Habitacao.class
+com\serene\tests\features\steps\structureXML\Header.class
+com\serene\tests\features\TestRunner.class
+com\serene\tests\features\steps\structureXML\Garantia.class
+com\resources\MensagemXML.class
+com\resources\GeraXML.class

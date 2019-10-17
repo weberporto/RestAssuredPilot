@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-failsafe-plugin/xsd/failsafe-test-report.xsd" name="com.serene.tests.features.TestRunner" time="5.131" tests="5" errors="0" skipped="1" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\bin"/>
+    <property name="java.vm.version" value="25.201-b09"/>
+    <property name="user.country.format" value="BR"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\PortoAmW\ProjetoPiloto\cucumber-serenity-restassured-master\RestAssuredProj"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\PortoAmW\ProjetoPiloto\cucumber-serenity-restassured-master\RestAssuredProj"/>
+    <property name="java.runtime.version" value="1.8.0_201-b09"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\PortoAmW\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\UnisysTestDev\Git\APPSoap\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf8981241209106415898.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_201\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_201/bin/server;C:/Program Files/Java/jre1.8.0_201/bin;C:/Program Files/Java/jre1.8.0_201/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Attachmate\INFOCNEE\;C:\Program Files (x86)\Attachmate\INFOCNEE\AccMgr32;C:\Program Files\Git\cmd;C:\Users\PortoAmW\scoop\shims;C:\Users\PortoAmW\AppData\Local\Microsoft\WindowsApps;;C:\Users\PortoAmW\Desktop\Documentos ORGANIZAR\FULL Desktop\SpringTools;;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\PortoAmW"/>
+    <property name="user.timezone" value="America/Sao_Paulo"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="PortoAmW"/>
+    <property name="java.class.path" value="/C:/Users/PortoAmW/Desktop/Documentos ORGANIZAR/FULL Desktop/SpringTools/plugins/org.eclipse.m2e.maven.runtime_1.7.0.20160603-1931/jars/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_201\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="user.language.format" value="pt"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_201"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_201\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Users\PortoAmW\ProjetoPiloto\cucumber-serenity-restassured-master\RestAssuredProj\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="Testar novas funcionalidades" classname="Cadastramento de avaliação SIRIC" time="0">
+    <skipped message="The step &quot;informo todos os dados para o cadastro de uma avaliação de risco SIRIC: avaliação de risco de risco &quot;13&quot;, &quot;03&quot;, &quot;654321880&quot;, &quot;F&quot;, &quot;2017-01-31&quot;, &quot;2020-09-30&quot;, &quot;4144&quot;, &quot;N&quot;, &quot;0&quot;, &quot;0&quot;, &quot;SICAQ&quot; e produto &quot;999&quot;, &quot;27&quot;, &quot;3&quot;, &quot;4000.00&quot;, &quot;200000.00&quot;, &quot;2&quot;, &quot;420&quot;, &quot;b32&quot;, &quot;00000000000000000000&quot;, &quot;N&quot; e habitação &quot;12018&quot;, &quot;200000.00&quot;, &quot;80.00000&quot; e grupo habitação &quot;P&quot;, &quot;00000000000&quot;, &quot;1382.90&quot;, &quot;43903817090&quot; e garantia &quot;999&quot;, &quot;3&quot;, &quot;426&quot;, &quot;1&quot;, &quot;1&quot;, &quot;200000.00&quot;&quot; is undefined"/>
+    <system-out><![CDATA[Recebeu o(s) tipo(s) do arquivo: xml
+]]></system-out>
+    <system-err><![CDATA[[main] INFO net.thucydides.core.steps.ConsoleLoggingListener - &amp#27;[36m
+
+-------------------------------------------------------------------------------------
+     _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
+    /       ||   ____||   _  \     |   ____||  \ |  | |  | |           |\   \  /   / 
+   |   (----`|  |__   |  |_)  |    |  |__   |   \|  | |  | `---|  |----` \   \/   /  
+    \   \    |   __|  |      /     |   __|  |  . `  | |  |     |  |       \_    _/   
+.----)   |   |  |____ |  |\  \----.|  |____ |  |\   | |  |     |  |         |  |     
+|_______/    |_______|| _| `._____||_______||__| \__| |__|     |__|         |__|    
+                                                                                     
+ News and tutorials at http://www.serenity-bdd.info                                  
+ Documentation at https://wakaleo.gitbooks.io/the-serenity-book/content/             
+ Join the Serenity Community on Rocket Chat at https://serenity-bdd.rocket.chat      
+ Serenity BDD Support and Training at http://serenity-bdd.info/#/trainingandsupport  
+ Learn Serenity BDD online at http://serenity-dojo.com                               
+-------------------------------------------------------------------------------------
+&amp#27;[0m
+[main] INFO net.thucydides.core.steps.ConsoleLoggingListener - Test Suite Started: Cadastramento de avaliação SIRIC
+[main] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: Testar novas funcionalidades
+-------------------------------------------------------------------(cadastramento-de-avaliação-siric;testar-novas-funcionalidades)
+[main] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Testar novas funcionalidades #1: {tipo=xml, tReg=13, tAval=03, cAval=654321880, iCpf=F, dVal=2017-01-31, dFim=2020-09-30, cUni=4144, cJul=N, iVEx=0, iPer=0, usu=SICAQ, cProd=999, cSis=27, cMod=3, vMPres=4000.00, vMEmp=200000.00, tPra=2, pMEmp=420, cRat=b32, cCont=00000000000000000000, iRen=N, oRec=12018, vImo=200000.00, cMax=80.00000, iPap=P, cTom=00000000000, rCli=1382.90, cPar=43903817090, cPGar=999, cMGar=3, cTGar=426, sTGar=1, pGar=1, vGar=200000.00}
+[main] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Dado que possuo dados para a geração de um arquivo "xml" para simulação do SIOPI
+[main] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+[main] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP E informo todos os dados para o cadastro de uma avaliação de risco SIRIC: avaliação de risco de risco "13", "03", "654321880", "F", "2017-01-31", "2020-09-30", "4144", "N", "0", "0", "SICAQ" e produto "999", "27", "3", "4000.00", "200000.00", "2", "420", "b32", "00000000000000000000", "N" e habitação "12018", "200000.00", "80.00000" e grupo habitação "P", "00000000000", "1382.90", "43903817090" e garantia "999", "3", "426", "1", "1", "200000.00"
+[main] INFO net.thucydides.core.steps.ConsoleLoggingListener - TEST PENDING
+[main] INFO net.thucydides.core.steps.ConsoleLoggingListener - PENDING STEP
+[main] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Então o arquivo esta pronto para envio
+[main] INFO net.thucydides.core.steps.ConsoleLoggingListener - IGNORING STEP
+[main] INFO net.thucydides.core.steps.ConsoleLoggingListener - TEST PENDING
+[main] INFO net.thucydides.core.steps.ConsoleLoggingListener - PENDING STEP
+[main] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+          __  _____ _____ ____ _____   ____  _____ _   _ ____ ___ _   _  ____ 
+ _       / / |_   _| ____/ ___|_   _| |  _ \| ____| \ | |  _ \_ _| \ | |/ ___|
+(_)____ / /    | | |  _| \___ \ | |   | |_) |  _| |  \| | | | | ||  \| | |  _ 
+ |_____/ /     | | | |___ ___) || |   |  __/| |___| |\  | |_| | || |\  | |_| |
+(_)   /_/      |_| |_____|____/ |_|   |_|   |_____|_| \_|____/___|_| \_|\____|
+                                                                                
+
+TEST PENDING: Testar novas funcionalidades
+---------------------------------------------------------------------------------
+]]></system-err>
+  </testcase>
+  <testcase name="Cadastrar avaliação" classname="Cadastramento de avaliação SIRIC" time="1.595"/>
+  <testcase name="Cadastrar avaliação existente" classname="Cadastramento de avaliação SIRIC" time="0.313"/>
+  <testcase name="Cadastrar avaliação com conjuge" classname="Cadastramento de avaliação SIRIC" time="0.429"/>
+  <testcase name="Cadastrar avaliação sem conjuge" classname="Cadastramento de avaliação SIRIC" time="0.299"/>
+</testsuite>

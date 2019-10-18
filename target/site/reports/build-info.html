@@ -36,9 +36,9 @@
     <script class="code" type="text/javascript">$(document).ready(function () {
         var test_results_plot = $.jqplot('test_results_pie_chart', [
             [
-                ['Passing', 0.8],
+                ['Passing', 1],
                 
-                ['Pending', 0.2],
+                ['Pending', 0],
                 
                 ['Ignored', 0],
                 
@@ -73,8 +73,8 @@
                 marginTop: '15px'
             },
             series: [
-                {label: '4 / 5 tests passed' },
-                {label: '1 / 5 tests pending'},
+                {label: '5 / 5 tests passed' },
+                {label: '0 / 5 tests pending'},
                 {label: '0 / 5 tests not executed'},
                 {label: '0 / 5 tests failed'},
                 {label: '0 / 5 errors'}
@@ -83,9 +83,9 @@
 
         var weighted_test_results_plot = $.jqplot('weighted_test_results_pie_chart', [
             [
-                ['Passing', 0.891892],
+                ['Passing', 1],
                 
-                ['Pending', 0.108108],
+                ['Pending', 0],
                 
                 ['Ignored', 0],
                 
@@ -121,8 +121,8 @@
                 marginTop: '15px'
             },
             series: [
-                {label: '4 / 5 tests passed (0.891892% of all test steps)' },
-                {label: '1 / 5 tests pending'},
+                {label: '5 / 5 tests passed (1% of all test steps)' },
+                {label: '0 / 5 tests pending'},
                 {label: '0 / 5 tests not executed'},
                 {label: '0 / 5 tests failed (0% of all test steps)'},
                 {label: '0 / 5 errors (0% of all test steps)'}
@@ -189,7 +189,7 @@
             <a href="requirement_type_feature.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 15-10-2019 16:04</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 18-10-2019 17:12</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>

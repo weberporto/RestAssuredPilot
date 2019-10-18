@@ -87,10 +87,10 @@ public class SiricStepDefn {
 	@Quando("^realizo o envio destes dados para a alta plataforma SIACI")
 	public void gera_envia_arquivo(){
 		System.out.println("Chamou o passo envio do arquivo!");
-		//
+		
 	}	
-	//***
-	
+
+	//** REVISAR...
 	@Dado("^que recupero estes dados do arquivo \"([^\"]*)\" do tipo \"([^\"]*)\" que foi gerado$")
 	public void recupera_dados(String nome, String tipo) throws IOException{		
 		siricAPI.recuperaArquivoServico(nome, tipo);
@@ -103,7 +103,6 @@ public class SiricStepDefn {
 	
 	@E("^informo o numero de uma avaliação já cadastrada")
 	public void informa_numero_avalicao(){
-		//testar
 		//Serenity.setSessionVariable("codigoAvaliacao").to(numero);
 	}
 	
@@ -121,6 +120,7 @@ public class SiricStepDefn {
 	public void envio_arquivo_post() {
 		siricAPI.postSiricRequest();
 	}
+	
 	@Então("^verifico o retorno do arquivo \"([^\"]*)\"$")
 	public void verifica_retornoEntao(String tipo) throws Exception{		
 		//String status = Serenity.sessionVariableCalled("status").toString();		

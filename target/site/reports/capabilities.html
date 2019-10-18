@@ -49,8 +49,8 @@
     <script class="code" type="text/javascript">$(document).ready(function () {
         var plot1 = $.jqplot('coverage_pie_chart', [
             [
-                ['Passing', 0],
-                ['Pending', 1],
+                ['Passing', 1],
+                ['Pending', 0],
                 ['Ignored', 0],
                 ['Failing', 0],
                 ['Errors',  0],
@@ -82,8 +82,8 @@
                 marginTop: '15px'
             },
             series: [
-                {label: '0 requirements tested successfully'},
-                {label: '1 requirements pending'},
+                {label: '1 requirements tested successfully'},
+                {label: '0 requirements pending'},
                 {label: '0} requirements skipped'},
                 {label: '0} requirements with failures'},
                 {label: '0} requirements with errors'},
@@ -180,7 +180,7 @@
             <a href="requirement_type_feature.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 15-10-2019 16:04</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 18-10-2019 17:12</span>
     <br style="clear:left"/>
 </div>
 
@@ -214,9 +214,9 @@
                                         <td class="summary-leading-column"><a
                                                 href="#requirements-tabs">Features</a></td>
                                         <td>1</td>
-                                        <td>0</td>
-                                        <td>0</td>
                                         <td>1</td>
+                                        <td>0</td>
+                                        <td>0</td>
                                         <td>0</td>
                                     </tr>
 
@@ -224,9 +224,9 @@
                                     <td class="summary-leading-column"><a href="#test-results-table">Acceptance Criteria
                                         (tests)</a></td>
                                     <td>5</td>
-                                    <td>4</td>
+                                    <td>5</td>
                                     <td>0</td>
-                                    <td>1</td>
+                                    <td>0</td>
                                     <td>0</td>
                                     <td></td>
                                 </tr>
@@ -255,9 +255,9 @@
         <tr>
             <td class="summary-leading-column">Automated</td>
             <td>5</td>
-            <td>4 (80%)</td>
+            <td>5 (100%)</td>
             <td>0 (0%)</td>
-            <td>1 (20%)</td>
+            <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
         <tr>
@@ -271,14 +271,14 @@
         <tr>
             <td class="summary-leading-column">Total</td>
             <td>5</td>
-            <td>4 (80%)</td>
+            <td>5 (100%)</td>
             <td>0 (0%)</td>
-            <td>1 (20%)</td>
+            <td>0 (0%)</td>
             <td>0 (0%)</td>
         </tr>
         <tr>
             <td class="summary-leading-column">Total Duration</td>
-                <td colspan="5">4 seconds</td>
+                <td colspan="5">5 seconds</td>
         </tr>
         </body>
     </table>
@@ -314,14 +314,14 @@
 
 
 
-                <tr class="test-PENDING requirementRow">
+                <tr class="test-SUCCESS requirementRow">
                     <td class="requirementRowCell">
-                        <span class="status_icon"><i class='fa fa-square-o pending-icon ' title='PENDING'></i></span>
-                        <span style="display:none">2</span>
+                        <span class="status_icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                        <span style="display:none">1</span>
                     </td>
                     <td class="cardNumber requirementRowCell"></td>
 
-                    <td class="PENDING-text requirementRowCell">
+                    <td class="SUCCESS-text requirementRowCell">
                         <a href="javaScript:void(0)" class="read-more-link">
                             <img src="images/plus.png" height="16"/></a>
                         <span class="requirementName"><a
@@ -333,8 +333,8 @@
 
                     <td class="greentext highlighted-value requirementRowCell">5</td>
 <!--
-                    <td class="greentext requirementRowCell">4</td>
-                    <td class="bluetext requirementRowCell">1</td>
+                    <td class="greentext requirementRowCell">5</td>
+                    <td class="bluetext requirementRowCell">0</td>
                     <td class="redtext requirementRowCell">0</td>
                     <td class="lightorangetext requirementRowCell">0</td>
                     <td class="violettext requirementRowCell">0</td>
@@ -353,71 +353,71 @@
 <table>
     <tr>
         <td width="40px">
-            <div class="small">80%</div>
+            <div class="small">100%</div>
         </td>
         <td width="125px">
             <div class="percentagebar"
                  title="  - Total tests: 5
-  - Passing tests: 4 (80%)
+  - Passing tests: 5 (100%)
   - Failing tests: 0 (0%)
   - Tests with errors: 0 (0%)
   - Compromised tests 0 (0%)
-  - Pending tests: 1 (20%)
+  - Pending tests: 0 (0%)
   - Ignored or skipped tests: 0 (0%)"
                  style="width: 125px;">
                 <div class="pendingbar"
                      title="  - Total tests: 5
-  - Passing tests: 4 (80%)
+  - Passing tests: 5 (100%)
   - Failing tests: 0 (0%)
   - Tests with errors: 0 (0%)
   - Compromised tests 0 (0%)
-  - Pending tests: 1 (20%)
+  - Pending tests: 0 (0%)
   - Ignored or skipped tests: 0 (0%)"
                      style="width: 125px;">
                     <div class="ignoredbar"
-                         style="width: 100px;"
+                         style="width: 125px;"
                          title="  - Total tests: 5
-  - Passing tests: 4 (80%)
+  - Passing tests: 5 (100%)
   - Failing tests: 0 (0%)
   - Tests with errors: 0 (0%)
   - Compromised tests 0 (0%)
-  - Pending tests: 1 (20%)
+  - Pending tests: 0 (0%)
   - Ignored or skipped tests: 0 (0%)">
                         <div class="compromisedbar"
-                             style="width: 100px;"
+                             style="width: 125px;"
                              title="  - Total tests: 5
-  - Passing tests: 4 (80%)
+  - Passing tests: 5 (100%)
   - Failing tests: 0 (0%)
   - Tests with errors: 0 (0%)
   - Compromised tests 0 (0%)
-  - Pending tests: 1 (20%)
+  - Pending tests: 0 (0%)
   - Ignored or skipped tests: 0 (0%)">
                             <div class="errorbar"
-                                 style="width: 100px;"
+                                 style="width: 125px;"
                                  title="  - Total tests: 5
-  - Passing tests: 4 (80%)
+  - Passing tests: 5 (100%)
   - Failing tests: 0 (0%)
   - Tests with errors: 0 (0%)
   - Compromised tests 0 (0%)
-  - Pending tests: 1 (20%)
+  - Pending tests: 0 (0%)
   - Ignored or skipped tests: 0 (0%)">
                                 <div class="failingbar"
-                                     style="width: 100px;"
+                                     style="width: 125px;"
                                      title="  - Total tests: 5
-  - Passing tests: 4 (80%)
+  - Passing tests: 5 (100%)
   - Failing tests: 0 (0%)
   - Tests with errors: 0 (0%)
   - Compromised tests 0 (0%)
-  - Pending tests: 1 (20%)
+  - Pending tests: 0 (0%)
   - Ignored or skipped tests: 0 (0%)">
                                     <div class="passingbar"
-                                         style="width: 100px;"
+                                         style="width: 125px;"
                                          title="  - Total tests: 5
-  - Passing tests: 4 (80%)
+  - Passing tests: 5 (100%)
   - Failing tests: 0 (0%)
   - Tests with errors: 0 (0%)
   - Compromised tests 0 (0%)
-  - Pending tests: 1 (20%)
+  - Pending tests: 0 (0%)
   - Ignored or skipped tests: 0 (0%)">
                                     </div>
                                 </div>
@@ -458,11 +458,11 @@
                         </thead>
                         <tbody>
 
-                            <tr class="test-PENDING">
-                                <td><span class="summary-icon"><i class='fa fa-square-o pending-icon ' title='PENDING'></i></span>
+                            <tr class="test-SUCCESS">
+                                <td><span class="summary-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
                                     
-                                    <span style="display:none">PENDING</span></td>
-                                <td class="PENDING-text">
+                                    <span style="display:none">SUCCESS</span></td>
+                                <td class="SUCCESS-text">
                                     <div class="ellipsis">
 
                                         <a href="cadastramento-de-avaliação-siric_testar-novas-funcionalidades.html" class="ellipsis"
@@ -473,12 +473,12 @@
                                     </div>
                                 </td>
 
-                                <td class="PENDING-text">4</td>
+                                <td class="SUCCESS-text">11</td>
 
 
-                                <td class="PENDING-text" data-sort="2019-10-15 16:04:16">16:04:16</td>
+                                <td class="SUCCESS-text" data-sort="2019-10-18 17:12:00">17:12:00</td>
 
-                                <td class="PENDING-text">1.81</td>
+                                <td class="SUCCESS-text">3.88</td>
                             </tr>
 
                             <tr class="test-SUCCESS">
@@ -499,9 +499,9 @@
                                 <td class="SUCCESS-text">7</td>
 
 
-                                <td class="SUCCESS-text" data-sort="2019-10-15 16:04:18">16:04:18</td>
+                                <td class="SUCCESS-text" data-sort="2019-10-18 17:12:04">17:12:04</td>
 
-                                <td class="SUCCESS-text">1.6</td>
+                                <td class="SUCCESS-text">0.37</td>
                             </tr>
 
                             <tr class="test-SUCCESS">
@@ -522,9 +522,9 @@
                                 <td class="SUCCESS-text">8</td>
 
 
-                                <td class="SUCCESS-text" data-sort="2019-10-15 16:04:19">16:04:19</td>
+                                <td class="SUCCESS-text" data-sort="2019-10-18 17:12:05">17:12:05</td>
 
-                                <td class="SUCCESS-text">0.32</td>
+                                <td class="SUCCESS-text">0.23</td>
                             </tr>
 
                             <tr class="test-SUCCESS">
@@ -545,9 +545,9 @@
                                 <td class="SUCCESS-text">9</td>
 
 
-                                <td class="SUCCESS-text" data-sort="2019-10-15 16:04:20">16:04:20</td>
+                                <td class="SUCCESS-text" data-sort="2019-10-18 17:12:05">17:12:05</td>
 
-                                <td class="SUCCESS-text">0.43</td>
+                                <td class="SUCCESS-text">0.27</td>
                             </tr>
 
                             <tr class="test-SUCCESS">
@@ -568,9 +568,9 @@
                                 <td class="SUCCESS-text">9</td>
 
 
-                                <td class="SUCCESS-text" data-sort="2019-10-15 16:04:20">16:04:20</td>
+                                <td class="SUCCESS-text" data-sort="2019-10-18 17:12:05">17:12:05</td>
 
-                                <td class="SUCCESS-text">0.3</td>
+                                <td class="SUCCESS-text">0.27</td>
                             </tr>
                         </tbody>
                     </table>

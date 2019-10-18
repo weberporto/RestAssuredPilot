@@ -28,9 +28,7 @@ public class Arquivo {
       	} 
       	lerArquivo.close();
       	leitura.close();
-      	
-      	System.out.println("Retorna novo arquivo: "+newArquivo);
-      	
+   
       	return newArquivo;
 	}
 }

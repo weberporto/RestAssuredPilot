@@ -36,7 +36,6 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import net.thucydides.core.annotations.Step;
 
-
 public class SiricAPISteps {
 	
 	  private Response res = null;  
@@ -48,7 +47,7 @@ public class SiricAPISteps {
 	  private XmlPath xp = null; 
 	  
 	  MensagemXML mensagem = new MensagemXML();
-	  
+	  //Geração do arquivo XML para envio dos dados via serviço
 	  @Step
 	  public void geraArquivo(String tReg, String tAva, String cAval, String iCpf, String cpfCnpj, String dVal, String dFim, String cUni, String cJul, String iVEx, String iPer, String usu,
 				String cProd, String cSis, String cMod, String vMPres, String vMEmp, String tPra, String pMEmp, String cRat, String cCont, String iRen,
@@ -64,7 +63,6 @@ public class SiricAPISteps {
 					new Produto(cProd, cSis, cMod, vMPres, vMEmp, tPra, pMEmp, cRat, cCont, iRen), 
 					new Habitacao(oRec, vImo, cMax),
 					new GrupoHabitacional(iPap, cTom, cPar, rCli), 
-					//new GrupoHabitacional("P", "00000000000", "43903817090", "1382.90"),
 					new Garantia(cPGar, cMGar, cTGar, sTGar, pGar, vGar)));	
 			
 		    XStream xStream = new XStream();
@@ -72,8 +70,6 @@ public class SiricAPISteps {
 		    xStream.alias("ns:mensagem", MensagemXML.class);		    
 		    xStream.useAttributeFor(MensagemXML.class, "endereco");
 		    xStream.aliasField("xmlns:ns", MensagemXML.class, "endereco");
-		    
-		    //xStream.alias("ns:mensagem xmlns:ns=\"http://br.unisys.com/siaci-messages/1.0.0\"", MensagemXML.class);
 		        
 		    File arquivo = new File("RepositoryArchives/siricTest.xml");
 		    FileOutputStream gravar;
@@ -99,7 +95,7 @@ public class SiricAPISteps {
       	requestSpec = builder.build();
       	
       	requestSpec = RestAssured.given().spec(requestSpec);      	
-      	requestSpec.log().all();
+      	//requestSpec.log().all();
       }
 	  
 	  @Step     

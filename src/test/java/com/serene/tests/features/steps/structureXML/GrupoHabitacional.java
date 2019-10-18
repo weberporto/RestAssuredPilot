@@ -16,15 +16,13 @@ public class GrupoHabitacional {
 	private String cpfParticipante;
 	private String rendaCliente;	
 	
-
-	/*
 	public GrupoHabitacional(String icPapelCliente, String cpfTomador, String rendaCliente) {
 		
 		this.icPapelCliente = icPapelCliente;
 		this.cpfTomador = cpfTomador;
 		this.rendaCliente = rendaCliente;
 	}
-	*/
+	
 	public GrupoHabitacional(String icPapelCliente, String cpfTomador, String cpfParticipante, String rendaCliente) {
 		
 		this.icPapelCliente = icPapelCliente;

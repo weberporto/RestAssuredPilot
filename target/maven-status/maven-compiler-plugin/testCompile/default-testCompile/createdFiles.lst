@@ -10,4 +10,3 @@ com\serene\tests\features\steps\structureXML\Header.class
 com\serene\tests\features\TestRunner.class
 com\serene\tests\features\steps\structureXML\Garantia.class
 com\resources\MensagemXML.class
-com\resources\GeraXML.class

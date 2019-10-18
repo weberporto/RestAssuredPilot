@@ -2,6 +2,6 @@
     <completed>5</completed>
     <errors>0</errors>
     <failures>0</failures>
-    <skipped>1</skipped>
+    <skipped>0</skipped>
     <failureMessage xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
 </failsafe-summary>

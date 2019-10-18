@@ -10,7 +10,7 @@ Seguindo os seguintes critérios:
 2) Se a avaliação existir, retorna uma mensagem de validação informando que o número informado já existe
 3) Realiza o cadastro com sucesso, tanto para avaliação de risco com conjuge quanto para sem conjuge
 
-Esquema do Cenario: Testar novas funcionalidades
+ 	Esquema do Cenario: Testar novas funcionalidades
   
   	Dado que possuo dados para a geração de um arquivo "<tipo>" para simulação do SIOPI
   	E informo todos os dados para o cadastro de uma avaliação de risco SIRIC: avaliação de risco de risco "<tReg>", "<tAval>", "<cAval>", "<iCpf>", "<cpfCnpj>", "<dVal>", "<dFim>", "<cUni>", "<cJul>", "<iVEx>", "<iPer>", "<usu>" e produto "<cProd>", "<cSis>", "<cMod>", "<vMPres>", "<vMEmp>", "<tPra>", "<pMEmp>", "<cRat>", "<cCont>", "<iRen>" e habitação "<oRec>", "<vImo>", "<cMax>" e grupo habitação "<iPap>", "<cTom>", "<rCli>", "<cPar>" e garantia "<cPGar>", "<cMGar>", "<cTGar>", "<sTGar>", "<pGar>", "<vGar>"
@@ -20,11 +20,10 @@ Esquema do Cenario: Testar novas funcionalidades
   	Então verifico a validação da tentativa de cadastro da avaliação "<avaliacao>" já existente, no arquivo "<tipo>"
   
   	Exemplos:
-  	|avaliacao|nome     |tipo|tReg|tAval|cAval		  |iCpf|cpfCnpj    |dVal			|dFim				|cUni|cJul|iVEx|iPer|usu  |cProd|cSis|cMod|vMPres	|vMEmp		|tPra|pMEmp|cRat|cCont               |iRen|oRec |vImo     |cMax    |iPap|cTom       |cPar				|rCli   |cPGar |cMGar |cTGar|sTGar|pGar|vGar		 |
-  	|654321880|siricTest|xml |13	|03	  |654321880	|F   |32769966340|2017-01-31|2020-09-30	|4144|N   |0	 |0   |SICAQ|999  |27  |3   |4000.00|200000.00|2   |420  |b32 |00000000000000000000|N   |12018|200000.00|80.00000|P   |00000000000|43903817090|1382.90|999   |3     |426  |1    |1   |200000.00|
+  		|avaliacao|nome     |tipo|tReg|tAval|cAval		  |iCpf|cpfCnpj    |dVal			|dFim				|cUni|cJul|iVEx|iPer|usu  |cProd|cSis|cMod|vMPres	|vMEmp		|tPra|pMEmp|cRat|cCont               |iRen|oRec |vImo     |cMax    |iPap|cTom       |cPar				|rCli   |cPGar |cMGar |cTGar|sTGar|pGar|vGar		 |
+  		|654321880|siricTest|xml |13	|03	  |654321880	|F   |32769966340|2017-01-31|2020-09-30	|4144|N   |0	 |0   |SICAQ|999  |27  |3   |4000.00|200000.00|2   |420  |b32 |00000000000000000000|N   |12018|200000.00|80.00000|P   |00000000000|43903817090|1382.90|999   |3     |426  |1    |1   |200000.00|
   	
-  	
-  	Esquema do Cenario: Cadastrar avaliação  	  
+  Esquema do Cenario: Cadastrar avaliação  	  
 
 		Dado o arquivo "<nome>" do tipo "<tipo>"
 		Quando realizo o envio destes dados

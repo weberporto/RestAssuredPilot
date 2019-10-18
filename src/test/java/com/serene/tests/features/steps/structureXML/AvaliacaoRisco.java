@@ -22,7 +22,7 @@ public class AvaliacaoRisco {
  	private GrupoHabitacional grupoHabitacional;
  	private Garantia garantia;
  	
- 	public AvaliacaoRisco(String tipoRegistro, String tipoAvaliacao, String codigoAvaliacao, String indCpfCnpj, String dataInicioValidade,
+ 	public AvaliacaoRisco(String tipoRegistro, String tipoAvaliacao, String codigoAvaliacao, String indCpfCnpj, String cpfCnpj, String dataInicioValidade,
  			String dataFimValidade, String codigoUnidade, String criterioJulgamental, String indContrataValorExato, String indPermissao, String usuario,
  			Produto produto, Habitacao habitacao, GrupoHabitacional grupoHabitacional, Garantia garantia){
  		
@@ -30,6 +30,7 @@ public class AvaliacaoRisco {
  		this.tipoAvaliacao = tipoAvaliacao;
  		this.codigoAvaliacao = codigoAvaliacao;
  		this.indCpfCnpj = indCpfCnpj;
+ 		this.cpfCnpj = cpfCnpj;
  		this.dataInicioValidade = dataInicioValidade;
  		this.dataFimValidade = dataFimValidade;
  		this.codigoUnidade = codigoUnidade;
@@ -43,7 +44,7 @@ public class AvaliacaoRisco {
  		this.garantia = garantia;
  	} 	
  	
- 	public AvaliacaoRisco(String tipoRegistro, String tipoAvaliacao, String codigoAvaliacao, String indCpfCnpj, String dataInicioValidade,
+ 	public AvaliacaoRisco(String tipoRegistro, String tipoAvaliacao, String codigoAvaliacao, String indCpfCnpj, String cpfCnpj, String dataInicioValidade,
  			String dataFimValidade, String codigoUnidade, String criterioJulgamental, String indContrataValorExato, String indPermissao, String usuario,
  			Produto produto, Habitacao habitacao, GrupoHabitacional grupoHabitacional1, GrupoHabitacional grupoHabitacional2, Garantia garantia){
  		
@@ -51,6 +52,7 @@ public class AvaliacaoRisco {
  		this.tipoAvaliacao = tipoAvaliacao;
  		this.codigoAvaliacao = codigoAvaliacao;
  		this.indCpfCnpj = indCpfCnpj;
+ 		this.cpfCnpj = cpfCnpj;
  		this.dataInicioValidade = dataInicioValidade;
  		this.dataFimValidade = dataFimValidade;
  		this.codigoUnidade = codigoUnidade;

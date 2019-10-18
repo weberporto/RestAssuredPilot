@@ -79,7 +79,7 @@
             <a href="requirement_type_feature.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 16-10-2019 13:49</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 17-10-2019 21:32</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -133,9 +133,9 @@ Seguindo os seguintes critérios:</p>
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></span>
+                            <span class="outcome-icon"><i class='fa fa-check-square-o success-icon fa-2x' title='SUCCESS'></i></span>
                             <span class="test-case-title">
-                                    <span class="failing-color">
+                                    <span class="success-color">
                                     Testar novas funcionalidades
                                         <span class="related-issue-title"></span>
                                 </span>
@@ -152,7 +152,7 @@ Seguindo os seguintes critérios:</p>
     <div class="story-title">
         <h3 class="story-header">Scenario Outline</h3>
 
-        <div class="scenario">Dado que possuo dados para a geração de um arquivo "&lt;tipo&gt;" para simulação do SIOPI<br>E informo todos os dados para o cadastro de uma avaliação de risco SIRIC: avaliação de risco de risco "&lt;tReg&gt;", "&lt;tAval&gt;", "&lt;cAval&gt;", "&lt;iCpf&gt;", "&lt;dVal&gt;", "&lt;dFim&gt;", "&lt;cUni&gt;", "&lt;cJul&gt;", "&lt;iVEx&gt;", "&lt;iPer&gt;", "&lt;usu&gt;" e produto "&lt;cProd&gt;", "&lt;cSis&gt;", "&lt;cMod&gt;", "&lt;vMPres&gt;", "&lt;vMEmp&gt;", "&lt;tPra&gt;", "&lt;pMEmp&gt;", "&lt;cRat&gt;", "&lt;cCont&gt;", "&lt;iRen&gt;" e habitação "&lt;oRec&gt;", "&lt;vImo&gt;", "&lt;cMax&gt;" e grupo habitação "&lt;iPap&gt;", "&lt;cTom&gt;", "&lt;rCli&gt;", "&lt;cPar&gt;" e garantia "&lt;cPGar&gt;", "&lt;cMGar&gt;", "&lt;cTGar&gt;", "&lt;sTGar&gt;", "&lt;pGar&gt;", "&lt;vGar&gt;"<br>Então o arquivo esta pronto para envio<br>Dado que recupero estes dados do arquivo "&lt;nome&gt;" do tipo "&lt;tipo&gt;" que foi gerado<br>Quando realizo o envio destes dados<br>Então verifico a validação da tentativa de cadastro da avaliação "&lt;avaliacao&gt;" já existente, no arquivo "&lt;tipo&gt;"</div>
+        <div class="scenario">Dado que possuo dados para a geração de um arquivo "&lt;tipo&gt;" para simulação do SIOPI<br>E informo todos os dados para o cadastro de uma avaliação de risco SIRIC: avaliação de risco de risco "&lt;tReg&gt;", "&lt;tAval&gt;", "&lt;cAval&gt;", "&lt;iCpf&gt;", "&lt;cpfCnpj&gt;", "&lt;dVal&gt;", "&lt;dFim&gt;", "&lt;cUni&gt;", "&lt;cJul&gt;", "&lt;iVEx&gt;", "&lt;iPer&gt;", "&lt;usu&gt;" e produto "&lt;cProd&gt;", "&lt;cSis&gt;", "&lt;cMod&gt;", "&lt;vMPres&gt;", "&lt;vMEmp&gt;", "&lt;tPra&gt;", "&lt;pMEmp&gt;", "&lt;cRat&gt;", "&lt;cCont&gt;", "&lt;iRen&gt;" e habitação "&lt;oRec&gt;", "&lt;vImo&gt;", "&lt;cMax&gt;" e grupo habitação "&lt;iPap&gt;", "&lt;cTom&gt;", "&lt;rCli&gt;", "&lt;cPar&gt;" e garantia "&lt;cPGar&gt;", "&lt;cMGar&gt;", "&lt;cTGar&gt;", "&lt;sTGar&gt;", "&lt;pGar&gt;", "&lt;vGar&gt;"<br>Então o arquivo esta pronto para envio<br>Dado que recupero estes dados do arquivo "&lt;nome&gt;" do tipo "&lt;tipo&gt;" que foi gerado<br>Quando realizo o envio destes dados<br>Então verifico a validação da tentativa de cadastro da avaliação "&lt;avaliacao&gt;" já existente, no arquivo "&lt;tipo&gt;"</div>
 
     </div>
 
@@ -177,6 +177,7 @@ Seguindo os seguintes critérios:</p>
                         <th>Taval</th>
                         <th>Caval</th>
                         <th>Icpf</th>
+                        <th>Cpfcnpj</th>
                         <th>Dval</th>
                         <th>Dfim</th>
                         <th>Cuni</th>
@@ -199,8 +200,8 @@ Seguindo os seguintes critérios:</p>
                         <th>Cmax</th>
                         <th>Ipap</th>
                         <th>Ctom</th>
-                        <th>Rcli</th>
                         <th>Cpar</th>
+                        <th>Rcli</th>
                         <th>Cpgar</th>
                         <th>Cmgar</th>
                         <th>Ctgar</th>
@@ -211,80 +212,82 @@ Seguindo os seguintes critérios:</p>
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="test-FAILURE"><a href="#0">1</a></td>
-                            <td class="test-FAILURE"><a href="#0">654321880</a>
+                        <td class="test-SUCCESS"><a href="#0">1</a></td>
+                            <td class="test-SUCCESS"><a href="#0">654321880</a>
                             </td>
-                            <td class="test-FAILURE"><a href="#0">siricTest</a>
+                            <td class="test-SUCCESS"><a href="#0">siricTest</a>
                             </td>
-                            <td class="test-FAILURE"><a href="#0">xml</a>
+                            <td class="test-SUCCESS"><a href="#0">xml</a>
                             </td>
-                            <td class="test-FAILURE"><a href="#0">13</a>
+                            <td class="test-SUCCESS"><a href="#0">13</a>
                             </td>
-                            <td class="test-FAILURE"><a href="#0">03</a>
+                            <td class="test-SUCCESS"><a href="#0">03</a>
                             </td>
-                            <td class="test-FAILURE"><a href="#0">654321881</a>
+                            <td class="test-SUCCESS"><a href="#0">654321880</a>
                             </td>
-                            <td class="test-FAILURE"><a href="#0">F</a>
+                            <td class="test-SUCCESS"><a href="#0">F</a>
                             </td>
-                            <td class="test-FAILURE"><a href="#0">2017-01-31</a>
+                            <td class="test-SUCCESS"><a href="#0">32769966340</a>
                             </td>
-                            <td class="test-FAILURE"><a href="#0">2020-09-30</a>
+                            <td class="test-SUCCESS"><a href="#0">2017-01-31</a>
                             </td>
-                            <td class="test-FAILURE"><a href="#0">4144</a>
+                            <td class="test-SUCCESS"><a href="#0">2020-09-30</a>
                             </td>
-                            <td class="test-FAILURE"><a href="#0">N</a>
+                            <td class="test-SUCCESS"><a href="#0">4144</a>
                             </td>
-                            <td class="test-FAILURE"><a href="#0">0</a>
+                            <td class="test-SUCCESS"><a href="#0">N</a>
                             </td>
-                            <td class="test-FAILURE"><a href="#0">0</a>
+                            <td class="test-SUCCESS"><a href="#0">0</a>
                             </td>
-                            <td class="test-FAILURE"><a href="#0">SICAQ</a>
+                            <td class="test-SUCCESS"><a href="#0">0</a>
                             </td>
-                            <td class="test-FAILURE"><a href="#0">999</a>
+                            <td class="test-SUCCESS"><a href="#0">SICAQ</a>
                             </td>
-                            <td class="test-FAILURE"><a href="#0">27</a>
+                            <td class="test-SUCCESS"><a href="#0">999</a>
                             </td>
-                            <td class="test-FAILURE"><a href="#0">3</a>
+                            <td class="test-SUCCESS"><a href="#0">27</a>
                             </td>
-                            <td class="test-FAILURE"><a href="#0">4000.00</a>
+                            <td class="test-SUCCESS"><a href="#0">3</a>
                             </td>
-                            <td class="test-FAILURE"><a href="#0">200000.00</a>
+                            <td class="test-SUCCESS"><a href="#0">4000.00</a>
                             </td>
-                            <td class="test-FAILURE"><a href="#0">2</a>
+                            <td class="test-SUCCESS"><a href="#0">200000.00</a>
                             </td>
-                            <td class="test-FAILURE"><a href="#0">420</a>
+                            <td class="test-SUCCESS"><a href="#0">2</a>
                             </td>
-                            <td class="test-FAILURE"><a href="#0">b32</a>
+                            <td class="test-SUCCESS"><a href="#0">420</a>
                             </td>
-                            <td class="test-FAILURE"><a href="#0">00000000000000000000</a>
+                            <td class="test-SUCCESS"><a href="#0">b32</a>
                             </td>
-                            <td class="test-FAILURE"><a href="#0">N</a>
+                            <td class="test-SUCCESS"><a href="#0">00000000000000000000</a>
                             </td>
-                            <td class="test-FAILURE"><a href="#0">12018</a>
+                            <td class="test-SUCCESS"><a href="#0">N</a>
                             </td>
-                            <td class="test-FAILURE"><a href="#0">200000.00</a>
+                            <td class="test-SUCCESS"><a href="#0">12018</a>
                             </td>
-                            <td class="test-FAILURE"><a href="#0">80.00000</a>
+                            <td class="test-SUCCESS"><a href="#0">200000.00</a>
                             </td>
-                            <td class="test-FAILURE"><a href="#0">P</a>
+                            <td class="test-SUCCESS"><a href="#0">80.00000</a>
                             </td>
-                            <td class="test-FAILURE"><a href="#0">00000000000</a>
+                            <td class="test-SUCCESS"><a href="#0">P</a>
                             </td>
-                            <td class="test-FAILURE"><a href="#0">1382.90</a>
+                            <td class="test-SUCCESS"><a href="#0">00000000000</a>
                             </td>
-                            <td class="test-FAILURE"><a href="#0">43903817090</a>
+                            <td class="test-SUCCESS"><a href="#0">43903817090</a>
                             </td>
-                            <td class="test-FAILURE"><a href="#0">999</a>
+                            <td class="test-SUCCESS"><a href="#0">1382.90</a>
                             </td>
-                            <td class="test-FAILURE"><a href="#0">3</a>
+                            <td class="test-SUCCESS"><a href="#0">999</a>
                             </td>
-                            <td class="test-FAILURE"><a href="#0">426</a>
+                            <td class="test-SUCCESS"><a href="#0">3</a>
                             </td>
-                            <td class="test-FAILURE"><a href="#0">1</a>
+                            <td class="test-SUCCESS"><a href="#0">426</a>
                             </td>
-                            <td class="test-FAILURE"><a href="#0">1</a>
+                            <td class="test-SUCCESS"><a href="#0">1</a>
                             </td>
-                            <td class="test-FAILURE"><a href="#0">200000.00</a>
+                            <td class="test-SUCCESS"><a href="#0">1</a>
+                            </td>
+                            <td class="test-SUCCESS"><a href="#0">200000.00</a>
                             </td>
                     </tr>
                 </tbody>
@@ -307,12 +310,12 @@ Seguindo os seguintes critérios:</p>
                 <tr class="step-table-separator">
                     <td colspan="5"></td>
                 </tr>
-                <tr class="test-FAILURE">
+                <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         <a name="0"/>
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
                                style="display:block">
-                                <i class="fa fa-plus-square-o imgstepSection0 failure-icon"
+                                <i class="fa fa-plus-square-o imgstepSection0 success-icon"
                                    style="margin-left: 20px; float:left;  padding-right:5px"></i>
                             </a>
                     </td>
@@ -321,14 +324,14 @@ Seguindo os seguintes critérios:</p>
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
                                style="display:block;">
                             <span class="top-level-step">
-                                Testar novas funcionalidades #1: {avaliacao=654321880, nome=siricTest, tipo=xml, tReg=13, tAval=03, cAval=654321881, iCpf=F, dVal=2017-01-31, dFim=2020-09-30, cUni=4144, cJul=N, iVEx=0, iPer=0, usu=SICAQ, cProd=999, cSis=27, cMod=3, vMPres=4000.00, vMEmp=200000.00, tPra=2, pMEmp=420, cRat=b32, cCont=00000000000000000000, iRen=N, oRec=12018, vImo=200000.00, cMax=80.00000, iPap=P, cTom=00000000000, rCli=1382.90, cPar=43903817090, cPGar=999, cMGar=3, cTGar=426, sTGar=1, pGar=1, vGar=200000.00}
+                                Testar novas funcionalidades #1: {avaliacao=654321880, nome=siricTest, tipo=xml, tReg=13, tAval=03, cAval=654321880, iCpf=F, cpfCnpj=32769966340, dVal=2017-01-31, dFim=2020-09-30, cUni=4144, cJul=N, iVEx=0, iPer=0, usu=SICAQ, cProd=999, cSis=27, cMod=3, vMPres=4000.00, vMEmp=200000.00, tPra=2, pMEmp=420, cRat=b32, cCont=00000000000000000000, iRen=N, oRec=12018, vImo=200000.00, cMax=80.00000, iPap=P, cTom=00000000000, cPar=43903817090, rCli=1382.90, cPGar=999, cMGar=3, cTGar=426, sTGar=1, pGar=1, vGar=200000.00}
                             </span>
                             </a>
 
                         </div>
                     </td>
-                    <td width="100"><span class="top-level-step">FAILURE</span></td>
-                    <td width="100"><span class="top-level-step">1.76s</span></td>
+                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
+                    <td width="100"><span class="top-level-step">2.02s</span></td>
                 </tr>
                     <tr>
                     <td colspan="5">
@@ -360,13 +363,13 @@ Seguindo os seguintes critérios:</p>
                     <td>
                         <div class="step-description">
                             <span class="nested-step">
-                                E informo todos os dados para o cadastro de uma avaliação de risco SIRIC: avaliação de risco de risco "13", "03", "654321881", "F", "2017-01-31", "2020-09-30", "4144", "N", "0", "0", "SICAQ" e produto "999", "27", "3", "4000.00", "200000.00", "2", "420", "b32", "00000000000000000000", "N" e habitação "12018", "200000.00", "80.00000" e grupo habitação "P", "00000000000", "1382.90", "43903817090" e garantia "999", "3", "426", "1", "1", "200000.00"
+                                E informo todos os dados para o cadastro de uma avaliação de risco SIRIC: avaliação de risco de risco "13", "03", "654321880", "F", "32769966340", "2017-01-31", "2020-09-30", "4144", "N", "0", "0", "SICAQ" e produto "999", "27", "3", "4000.00", "200000.00", "2", "420", "b32", "00000000000000000000", "N" e habitação "12018", "200000.00", "80.00000" e grupo habitação "P", "00000000000", "1382.90", "43903817090" e garantia "999", "3", "426", "1", "1", "200000.00"
                             </span>
 
                         </div>
                     </td>
                     <td width="100"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">0.07s</span></td>
+                    <td width="100"><span class="nested-step">0.06s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
@@ -377,7 +380,7 @@ Seguindo os seguintes critérios:</p>
                     <td>
                         <div class="step-description">
                             <span class="nested-group-step">
-                                Gera arquivo: 13, 03, 654321881, F, 2017-01-31, 2020-09-30, 4144, N, 0, 0, SICAQ, 999, 27, 3, 4000.00, 200000.00, 2, 420, b32, 00000000000000000000, N, 12018, 200000.00, 80.00000, P, 00000000000, 1382.90, 43903817090, 999, 3, 426, 1, 1, 200000.00
+                                Gera arquivo: 13, 03, 654321880, F, 32769966340, 2017-01-31, 2020-09-30, 4144, N, 0, 0, SICAQ, 999, 27, 3, 4000.00, 200000.00, 2, 420, b32, 00000000000000000000, N, 12018, 200000.00, 80.00000, P, 00000000000, 1382.90, 43903817090, 999, 3, 426, 1, 1, 200000.00
                             </span>
 
                         </div>
@@ -418,7 +421,7 @@ Seguindo os seguintes critérios:</p>
                         </div>
                     </td>
                     <td width="100"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">0.27s</span></td>
+                    <td width="100"><span class="nested-step">0.25s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
@@ -435,7 +438,7 @@ Seguindo os seguintes critérios:</p>
                         </div>
                     </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">0.27s</span></td>
+                    <td width="100"><span class="nested-group-step">0.25s</span></td>
                 </tr>
 
                 <tr class="test-SUCCESS">
@@ -453,7 +456,7 @@ Seguindo os seguintes critérios:</p>
                         </div>
                     </td>
                     <td width="100"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">0.67s</span></td>
+                    <td width="100"><span class="nested-step">1s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
@@ -470,14 +473,14 @@ Seguindo os seguintes critérios:</p>
                         </div>
                     </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">0.67s</span></td>
+                    <td width="100"><span class="nested-group-step">1s</span></td>
                 </tr>
 
-                <tr class="test-FAILURE">
+                <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         
                             <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-icon"><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></span>
+                                  class="nested-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
@@ -487,14 +490,14 @@ Seguindo os seguintes critérios:</p>
 
                         </div>
                     </td>
-                    <td width="100"><span class="nested-step">FAILURE</span></td>
-                    <td width="100"><span class="nested-step">0.34s</span></td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">0.27s</span></td>
                 </tr>
-                <tr class="test-FAILURE">
+                <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         
                             <span style="margin-left: 60px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></span>
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
@@ -504,78 +507,18 @@ Seguindo os seguintes critérios:</p>
 
                         </div>
                     </td>
-                    <td width="100"><span class="nested-group-step">FAILURE</span></td>
-                    <td width="100"><span class="nested-group-step">0.33s</span></td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">0.26s</span></td>
                 </tr>
-                    <tr class="test-FAILURE">
-                        <td width="40">&nbsp</td>
-                        <td width="%" colspan="4" class="error-message-cell">
-                            <div class="error-message ellipsis"
-                                 title='Comparison failure: expected:&lt;[654321880]&gt; but was:&lt;[]&gt;'>
-                                <pre>Comparison failure: expected:&lt;[654321880]&gt; but was:&lt;[]&gt;</pre>
-                            </div>
-                <div><!-- Stack trace -->
-                    <button type="button" class="btn btn-danger" data-toggle="modal"
-                            data-target="#stacktraceModal-11">
-                        View details
-                    </button>
-                </div>
-                <!-- Modal -->
-                <div class="modal fade" id="stacktraceModal-11" tabindex="-1" role="dialog"
-                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal"
-                                        aria-label="Close"><span aria-hidden="true">&times;</span>
-                                </button>
-                                <h4 class="modal-title" id="stacktraceModalLabel">
-                                    org.junit.ComparisonFailure
-                                </h4>
-                            </div>
-                            <div class="modal-body">
-                                    <h5>
-                                        <pre>expected:&lt;[654321880]&gt; but was:&lt;[]&gt;</pre>
-                                    </h5>
-                                    com.serene.tests.features.steps.SiricAPISteps.verificaValidacaoRetorno(SiricAPISteps.java
-                                    :126) <br>
-                                    com.serene.tests.features.steps.SiricStepDefn.verifica_tentativa_cadastro_avaliacao_existente(SiricStepDefn.java
-                                    :139) <br>
-                                    cucumber.runner.Runner.runPickle(Runner.java
-                                    :80) <br>
-                                    org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java
-                                    :86) <br>
-                                    org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java
-                                    :38) <br>
-                                    org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java
-                                    :459) <br>
-                                    org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java
-                                    :678) <br>
-                                    org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java
-                                    :382) <br>
-                                    org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java
-                                    :192) <br>
-                            </div>
-
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">
-                                    Close
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                        </td>
-                    </tr>
 
 
                     </table>
                     </td>
                     <tr>
-                <tr class="test-FAILURE">
+                <tr class="test-SUCCESS">
                     <td colspan="2"></td>
-                    <td width="100"><span class="top-level-step"><em>FAILURE</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>2.63s</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>SUCCESS</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>2.67s</em></span></td>
                 </tr>
 
             </table>

@@ -50,23 +50,30 @@ public class SiricAPISteps {
 	  MensagemXML mensagem = new MensagemXML();
 	  
 	  @Step
-	  public void geraArquivo(String tReg, String tAva, String cAval, String iCpf, String dVal, String dFim, String cUni, String cJul, String iVEx, String iPer, String usu,
+	  public void geraArquivo(String tReg, String tAva, String cAval, String iCpf, String cpfCnpj, String dVal, String dFim, String cUni, String cJul, String iVEx, String iPer, String usu,
 				String cProd, String cSis, String cMod, String vMPres, String vMEmp, String tPra, String pMEmp, String cRat, String cCont, String iRen,
 				String oRec, String vImo, String cMax,
 				String iPap, String cTom, String rCli, String cPar,
 				String cPGar, String cMGar, String cTGar, String sTGar, String pGar, String vGar){  
-		  	System.out.println("Entrou na geração do arquivo.");
+
+		  	mensagem.setEndereco("http://br.unisys.com/siaci-messages/1.0.0");
+		  
 		  	mensagem.setHeader(new Header("Teste"));
 					
-			mensagem.setAvaliacaoRisco(new AvaliacaoRisco(tReg, tAva, cAval, iCpf, dVal, dFim, cUni, cJul, iVEx, iPer, usu,
+			mensagem.setAvaliacaoRisco(new AvaliacaoRisco(tReg, tAva, cAval, iCpf, cpfCnpj, dVal, dFim, cUni, cJul, iVEx, iPer, usu,
 					new Produto(cProd, cSis, cMod, vMPres, vMEmp, tPra, pMEmp, cRat, cCont, iRen), 
 					new Habitacao(oRec, vImo, cMax),
-					new GrupoHabitacional(iPap, cTom, rCli, cPar), 
+					new GrupoHabitacional(iPap, cTom, cPar, rCli), 
 					//new GrupoHabitacional("P", "00000000000", "43903817090", "1382.90"),
-					new Garantia(cPGar, cMGar, cTGar, sTGar, pGar, vGar)));		
-
-		    XStream xStream = new XStream();		        
-		    xStream.alias("ns:mensagem xmlns:ns=\"http://br.unisys.com/siaci-messages/1.0.0\"", MensagemXML.class);
+					new Garantia(cPGar, cMGar, cTGar, sTGar, pGar, vGar)));	
+			
+		    XStream xStream = new XStream();
+		    
+		    xStream.alias("ns:mensagem", MensagemXML.class);		    
+		    xStream.useAttributeFor(MensagemXML.class, "endereco");
+		    xStream.aliasField("xmlns:ns", MensagemXML.class, "endereco");
+		    
+		    //xStream.alias("ns:mensagem xmlns:ns=\"http://br.unisys.com/siaci-messages/1.0.0\"", MensagemXML.class);
 		        
 		    File arquivo = new File("RepositoryArchives/siricTest.xml");
 		    FileOutputStream gravar;
@@ -77,9 +84,9 @@ public class SiricAPISteps {
 		     	} catch (IOException ex) {
 		            ex.printStackTrace();
 		    }
-		  
+
 	  }
-	
+	  
 	  @Step
       public void recuperaArquivoServico (String nome, String tipo) throws IOException {
 		  
@@ -178,10 +185,10 @@ public class SiricAPISteps {
 		   
 		  mensagem.setHeader(new Header("Teste"));
 			
-			mensagem.setAvaliacaoRisco(new AvaliacaoRisco("13", "03", "654321880", "F", "2017-01-31", "2020-09-30", "4144", "N", "0", "0", "SICAQ",
+			mensagem.setAvaliacaoRisco(new AvaliacaoRisco("13", "03", "654321880", "F", "32769966340", "2017-01-31", "2020-09-30", "4144", "N", "0", "0", "SICAQ",
 					new Produto("999", "27", "3", "4000.00", "200000.00", "2", "420", "B32", "00000000000000000000", "N"), 
 					new Habitacao("12018", "200000.00", "80.00000"),
-					new GrupoHabitacional("T", "93136469003", "93136469003"), 
+					//new GrupoHabitacional("T", "93136469003", "93136469003"), 
 					new GrupoHabitacional("P", "00000000000", "43903817090", "1382.90"),
 					new Garantia("999", "3", "426", "1", "1", "200000.00")));		
 

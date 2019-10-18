@@ -63,14 +63,14 @@ public class SiricStepDefn {
 		siricAPI.informa_campos(campo, valor);
 	}
 	
-	@E("^informo todos os dados para o cadastro de uma avaliação de risco SIRIC: avaliação de risco de risco \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\" e produto \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\" e habitação \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\" e grupo habitação \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\" e garantia \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\"$")
-	public void informa_dados(String tReg, String tAva, String cAval, String iCpf, String dVal, String dFim, String cUni, String cJul, String iVEx, String iPer, String usu,
+	@E("^informo todos os dados para o cadastro de uma avaliação de risco SIRIC: avaliação de risco de risco \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\" e produto \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\" e habitação \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\" e grupo habitação \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\" e garantia \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\"$")
+	public void informa_dados(String tReg, String tAva, String cAval, String iCpf, String cpfCnpj, String dVal, String dFim, String cUni, String cJul, String iVEx, String iPer, String usu,
 			String cProd, String cSis, String cMod, String vMPres, String vMEmp, String tPra, String pMEmp, String cRat, String cCont, String iRen,
 			String oRec, String vImo, String cMax,
 			String iPap, String cTom, String rCli, String cPar,
 			String cPGar, String cMGar, String cTGar, String sTGar, String pGar, String vGar){
 		
-		siricAPI.geraArquivo(tReg, tAva, cAval, iCpf, dVal, dFim, cUni, cJul, iVEx, iPer, usu,
+		siricAPI.geraArquivo(tReg, tAva, cAval, iCpf, cpfCnpj, dVal, dFim, cUni, cJul, iVEx, iPer, usu,
 				cProd, cSis, cMod, vMPres, vMEmp, tPra, pMEmp, cRat, cCont, iRen,
 				oRec, vImo, cMax,
 				iPap, cTom, rCli, cPar,

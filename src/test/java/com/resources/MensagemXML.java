@@ -13,12 +13,14 @@ import cucumber.deps.com.thoughtworks.xstream.annotations.XStreamAlias;
 public class MensagemXML {
 	
 	private String mensagem;
-	private Header headerSIBAR;
+	private Header HeaderSIBAR;
 	private AvaliacaoRisco avaliacaoRisco;	
-	private Produto produto;
-	private Habitacao habitacao;
-	private GrupoHabitacional grupoHabitacional;
-	private Garantia garantia;
+	private String endereco;
+	
+//	private Produto produto;
+//	private Habitacao habitacao;
+//	private GrupoHabitacional grupoHabitacional;
+//	private Garantia garantia;
 	
 	public String getMensagem(){
 		return mensagem;
@@ -27,13 +29,13 @@ public class MensagemXML {
 	public void setMensagem(String mensagem){
 		this.mensagem = mensagem;
 	}
-
+	
 	public Header getHeader(){
-		return headerSIBAR;
+		return HeaderSIBAR;
 	}
 	    
 	public void setHeader(Header header){
-	   this.headerSIBAR = header;
+	   this.HeaderSIBAR = header;
 	}
 	
 	public AvaliacaoRisco getAvaliacaoRisco(){
@@ -43,8 +45,17 @@ public class MensagemXML {
 	public void setAvaliacaoRisco(AvaliacaoRisco avaliacaoRisco){
 		this.avaliacaoRisco = avaliacaoRisco;
 	}
+	
+	public String getEndereco(){
+		return endereco;
+	}
+	
+	public void setEndereco(String endereco){
+		this.endereco = endereco;
+	}
+	
 
-	//**
+	/**
 	public void setAvaliacaoRisco(Produto produto) {
 		this.produto = produto;
 	}
@@ -60,5 +71,5 @@ public class MensagemXML {
 	public void setAvaliacaoRisco(Garantia garantia) {
 		this.garantia = garantia;		
 	}
-	//**
+	**/
 }

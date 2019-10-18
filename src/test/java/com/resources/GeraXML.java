@@ -38,10 +38,10 @@ public class GeraXML {
 		
 		mensagem.setHeader(new Header("Teste"));
 			
-		mensagem.setAvaliacaoRisco(new AvaliacaoRisco("13", "03", "654321880", "F", "2017-01-31", "2020-09-30", "4144", "N", "0", "0", "SICAQ",
+		mensagem.setAvaliacaoRisco(new AvaliacaoRisco("13", "03", "654321880", "F", "32769966340", "2017-01-31", "2020-09-30", "4144", "N", "0", "0", "SICAQ",
 				new Produto("999", "27", "3", "4000.00", "200000.00", "2", "420", "B32", "00000000000000000000", "N"), 
 				new Habitacao("12018", "200000.00", "80.00000"),
-				new GrupoHabitacional("T", "93136469003", "93136469003"), 
+				//new GrupoHabitacional("T", "93136469003", "93136469003"), 
 				new GrupoHabitacional("P", "00000000000", "43903817090", "1382.90"),
 				new Garantia("999", "3", "426", "1", "1", "200000.00")));		
 
@@ -50,6 +50,9 @@ public class GeraXML {
         
         File arquivo = new File("RepositoryArchives/siricTest.xml");
         FileOutputStream gravar;
+        
+        System.out.println("Arquivo XML para ser gravado: "+arquivo);
+        
         try {
             gravar = new FileOutputStream(arquivo);
             gravar.write(xStream.toXML(mensagem).getBytes());

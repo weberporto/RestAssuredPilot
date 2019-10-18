@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Cadastramento de avaliação SIRIC" skipped="0" tests="4" time="3.72" timestamp="2019-10-17 05:46:27"><testcase name="Cadastrar avaliação"/><testcase name="Cadastrar avaliação existente"/><testcase name="Cadastrar avaliação com conjuge"/><testcase name="Cadastrar avaliação sem conjuge"/></testsuite>

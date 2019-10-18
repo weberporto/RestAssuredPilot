@@ -1,12 +1,13 @@
 <ns:mensagem xmlns:ns="http://br.unisys.com/siaci-messages/1.0.0">
-  <headerSIBAR>
+  <HeaderSIBAR>
     <Usuario>Teste</Usuario>
-  </headerSIBAR>
+  </HeaderSIBAR>
   <avaliacaoRisco>
     <tipoRegistro>13</tipoRegistro>
     <tipoAvaliacao>03</tipoAvaliacao>
-    <codigoAvaliacao>654321881</codigoAvaliacao>
+    <codigoAvaliacao>654321880</codigoAvaliacao>
     <indCpfCnpj>F</indCpfCnpj>
+    <cpfCnpj>32769966340</cpfCnpj>
     <dataInicioValidade>2017-01-31</dataInicioValidade>
     <dataFimValidade>2020-09-30</dataFimValidade>
     <codigoUnidade>4144</codigoUnidade>
@@ -34,8 +35,8 @@
     <grupoHabitacional>
       <icPapelCliente>P</icPapelCliente>
       <cpfTomador>00000000000</cpfTomador>
-      <rendaCliente>1382.90</rendaCliente>
       <cpfParticipante>43903817090</cpfParticipante>
+      <rendaCliente>1382.90</rendaCliente>
     </grupoHabitacional>
     <garantia>
       <codigoProduto>999</codigoProduto>
@@ -46,4 +47,4 @@
       <valor>200000.00</valor>
     </garantia>
   </avaliacaoRisco>
-</ns:mensagem xmlns:ns="http://br.unisys.com/siaci-messages/1.0.0">
+</ns:mensagem>

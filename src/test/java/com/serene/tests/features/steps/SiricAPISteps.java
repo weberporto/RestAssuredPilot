@@ -98,11 +98,12 @@ public class SiricAPISteps {
       	//requestSpec.log().all();
       }
 	  
+	  //Envio POST do arquivo XML gerado
 	  @Step     
       public void postSiricRequest()  {
       	res = requestSpec.when().post();
       }
-	  
+
 	  @Step
       public void verificaRetorno(String tipo){
 		  
@@ -117,9 +118,8 @@ public class SiricAPISteps {
 			Assert.assertEquals("654321880", jp.getString("mensagem.respostaAvaliacaoRisco.codigoAvaliacao"));
 			Assert.assertEquals("Ja existe uma avaliacao de risco com o codigo 654321880.", jp.getString("mensagem.respostaAvaliacaoRisco.mensagemValidacao"));
 		}
-		
       }
-	  
+
 	  @Step
       public void verificaValidacaoRetorno(String avaliacao, String tipo){
 		  
@@ -136,6 +136,7 @@ public class SiricAPISteps {
 		  }
 	  }
 	  
+	  //Passo de verificação de retorno
 	  @Step
 	  public void verificaRetornoComConjuge(String avaliacao, String tipo){
 		  
@@ -152,6 +153,7 @@ public class SiricAPISteps {
 			}
 	  }
 	  
+	  //Passo de verificação de retorno
 	  @Step
 	  public void verificaRetornoSemConjuge(String avaliacao, String tipo){
 		  
@@ -168,29 +170,9 @@ public class SiricAPISteps {
 			}
 	  }
 	  
+	  //Passo de verificação de retorno
 	  @Step
 	  public void verificaAcessoServicoSucesso(){		  
 		  Assert.assertEquals("Sucesso", 200, res.getStatusCode());
-	  }
-	  
-	  
-	  //Implementação NOVA - informa os parâmetros para a geração do arquivo
-	  @Step
-	  public MensagemXML informa_campos(String campo, String valor){
-		  System.out.println("Recebeu o(s) valor(es): " + campo);
-		   
-		  mensagem.setHeader(new Header("Teste"));
-			
-			mensagem.setAvaliacaoRisco(new AvaliacaoRisco("13", "03", "654321880", "F", "32769966340", "2017-01-31", "2020-09-30", "4144", "N", "0", "0", "SICAQ",
-					new Produto("999", "27", "3", "4000.00", "200000.00", "2", "420", "B32", "00000000000000000000", "N"), 
-					new Habitacao("12018", "200000.00", "80.00000"),
-					//new GrupoHabitacional("T", "93136469003", "93136469003"), 
-					new GrupoHabitacional("P", "00000000000", "43903817090", "1382.90"),
-					new Garantia("999", "3", "426", "1", "1", "200000.00")));		
-
-	        XStream xStream = new XStream();        
-	        xStream.alias("ns:mensagem xmlns:ns='http://br.unisys.com/siaci-messages/1.0.0'", MensagemXML.class);
-		  
-	        return mensagem;
 	  }
 }

@@ -183,7 +183,6 @@ public class AvaliacaoRisco {
     	this.usuario = usuario;
     }
     
-    //**
     public Produto getProduto(){
     	return produto;
     }
@@ -191,7 +190,6 @@ public class AvaliacaoRisco {
     public void setProduto(Produto produto){
     	this.produto = produto;
     }
-    //**
     
     public Habitacao getHabitacao(){
     	return habitacao;

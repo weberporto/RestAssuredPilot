@@ -12,11 +12,12 @@ Seguindo os seguintes critérios:
 
  	Esquema do Cenario: Testar novas funcionalidades
   
-  	Dado que possuo dados para a geração de um arquivo "<tipo>" para simulação do SIOPI
+  	Dado que possuo os dados para a geração do arquivo "<tipo>" para simulação de envio via SIOPI
   	E informo todos os dados para o cadastro de uma avaliação de risco SIRIC: avaliação de risco de risco "<tReg>", "<tAval>", "<cAval>", "<iCpf>", "<cpfCnpj>", "<dVal>", "<dFim>", "<cUni>", "<cJul>", "<iVEx>", "<iPer>", "<usu>" e produto "<cProd>", "<cSis>", "<cMod>", "<vMPres>", "<vMEmp>", "<tPra>", "<pMEmp>", "<cRat>", "<cCont>", "<iRen>" e habitação "<oRec>", "<vImo>", "<cMax>" e grupo habitação "<iPap>", "<cTom>", "<rCli>", "<cPar>" e garantia "<cPGar>", "<cMGar>", "<cTGar>", "<sTGar>", "<pGar>", "<vGar>"
-  	Então o arquivo esta pronto para envio
-  	Dado que recupero estes dados do arquivo "<nome>" do tipo "<tipo>" que foi gerado
-  	Quando realizo o envio destes dados
+  	E verifico que todos os dados do arquivo "<nome>" do tipo "<tipo>" estão 'Ok'
+  	Dado que o arquivo está pronto para envio
+  	E os dados são carregados para envio
+  	Quando realizo o envio destes dados para a alta plataforma SIACI	
   	Então verifico a validação da tentativa de cadastro da avaliação "<avaliacao>" já existente, no arquivo "<tipo>"
   
   	Exemplos:
@@ -25,7 +26,7 @@ Seguindo os seguintes critérios:
   	
   Esquema do Cenario: Cadastrar avaliação  	  
 
-		Dado o arquivo "<nome>" do tipo "<tipo>"
+		Dado que possuo o arquivo "<nome>" do tipo "<tipo>" com os dados já preenchidos
 		Quando realizo o envio destes dados
 		Então verifico o retorno do arquivo "<tipo>"
 		
@@ -35,7 +36,7 @@ Seguindo os seguintes critérios:
 		
 	Esquema do Cenario: Cadastrar avaliação existente
 	
-		Dado o arquivo "<nome>" do tipo "<tipo>"
+		Dado que possuo o arquivo "<nome>" do tipo "<tipo>" com os dados já preenchidos
 		E informo o numero de uma avaliação já cadastrada
 		Quando realizo o envio destes dados
 		Então verifico a validação da tentativa de cadastro da avaliação "<avaliacao>" já existente, no arquivo "<tipo>"
@@ -46,7 +47,7 @@ Seguindo os seguintes critérios:
 		
 	Esquema do Cenario: Cadastrar avaliação com conjuge
 	
-		Dado o arquivo "<nome>" do tipo "<tipo>"
+		Dado que possuo o arquivo "<nome>" do tipo "<tipo>" com os dados já preenchidos
 		Quando realizo o envio destes dados
 		Então verifico se o acesso ao serviço foi com sucesso.
 		E verifico o retorno da avaliação com conjuge, número "<avaliacao>", do arquivo "<tipo>"
@@ -57,7 +58,7 @@ Seguindo os seguintes critérios:
 			
 	Esquema do Cenario: Cadastrar avaliação sem conjuge
 	
-		Dado o arquivo "<nome>" do tipo "<tipo>"
+		Dado que possuo o arquivo "<nome>" do tipo "<tipo>" com os dados já preenchidos
 		Quando realizo o envio destes dados
 		Então verifico se o acesso ao serviço foi com sucesso.
 		E verifico o retorno da avaliação sem conjuge, número "<avaliacao>", do arquivo "<tipo>"

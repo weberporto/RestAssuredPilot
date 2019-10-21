@@ -48,10 +48,9 @@ public class SiricStepDefn {
 	//@Dado("^que possuo um arquivo \"([^\"]*)\" de dados simulando a aplicação do SIOPI")
 	
 	//Implementação NOVA
-	@Dado("^que possuo dados para a geração de um arquivo \"([^\"]*)\" para simulação do SIOPI")	
+	@Dado("^que possuo os dados para a geração do arquivo \"([^\"]*)\" para simulação de envio via SIOPI")	
 	public void verifica_tipo_dados(String tipo){
 		System.out.println("Recebeu o(s) tipo(s) do arquivo: "+ tipo);
-		//
 	}
 	
 	//@E("^informo o(s) campo(s) \"([^\"]*)\" da funcionalidade 'SIRIC' para cadastro dos dados de 'Avaliação de Risco'")
@@ -60,7 +59,7 @@ public class SiricStepDefn {
 	@E("^informo o campo \"([^\"]*)\" com o valor \"([^\"]*)\" ")
 	public void recebe_dados(String campo, String valor){	
 		System.out.println("Recebeu o(s) valor(es) da funcionalidade SIRIC: "+ campo);
-		siricAPI.informa_campos(campo, valor);
+		//siricAPI.informa_campos(campo, valor);
 	}
 	
 	@E("^informo todos os dados para o cadastro de uma avaliação de risco SIRIC: avaliação de risco de risco \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\" e produto \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\" e habitação \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\" e grupo habitação \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\" e garantia \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\", \"([^\"]*)\"$")
@@ -76,6 +75,19 @@ public class SiricStepDefn {
 				iPap, cTom, rCli, cPar,
 				cPGar, cMGar, cTGar, sTGar, pGar, vGar);
 	}
+	/*
+	@Então("^verifico que todos os dados do arquivo \"([^\"]*)\" do tipo \"([^\"]*)\" estão 'Ok'$")
+	public void verifica_arquivo(String nome, String tipo) throws IOException{
+		System.out.println("Dados gerados com sucesso!!!");
+		siricAPI.recuperaArquivoServico(nome, tipo);
+	}
+	*/
+	
+	@E("^verifico que todos os dados do arquivo \"([^\"]*)\" do tipo \"([^\"]*)\" estão 'Ok'$")
+	public void verifica_dados_arquivo(String nome, String tipo) throws IOException{
+		System.out.println("Dados gerados com sucesso!!!");
+		siricAPI.recuperaArquivoServico(nome, tipo);
+	}
 	
 	@Então("^o arquivo esta pronto para envio")
 	public void gera_arquivo(){
@@ -83,20 +95,29 @@ public class SiricStepDefn {
 		//siricAPI.geraArquivo();
 	}
 	
+	@Dado("^que o arquivo está pronto para envio")
+	public void dado_pronto_envio(){
+		System.out.println("Todos os dados estão prontos para o envio");
+	}
+	
+	@E("^os dados são carregados para envio")
+	public void pronto_envio(){
+		System.out.println("Dados carregados com sucesso!!!");
+	}
+	
 	//Implementação NOVA
 	@Quando("^realizo o envio destes dados para a alta plataforma SIACI")
 	public void gera_envia_arquivo(){
-		System.out.println("Chamou o passo envio do arquivo!");
-		
-	}	
-
+		siricAPI.postSiricRequest();		
+	}
+	
 	//** REVISAR...
 	@Dado("^que recupero estes dados do arquivo \"([^\"]*)\" do tipo \"([^\"]*)\" que foi gerado$")
 	public void recupera_dados(String nome, String tipo) throws IOException{		
 		siricAPI.recuperaArquivoServico(nome, tipo);
 	}
 	
-	@Dado("^o arquivo \"([^\"]*)\" do tipo \"([^\"]*)\"$")
+	@Dado("^que possuo o arquivo \"([^\"]*)\" do tipo \"([^\"]*)\" com os dados já preenchidos$")
 	public void recupera_dados_arquivo(String nome, String tipo) throws IOException{		
 		siricAPI.recuperaArquivoServico(nome, tipo);
 	}
@@ -122,7 +143,7 @@ public class SiricStepDefn {
 	}
 	
 	@Então("^verifico o retorno do arquivo \"([^\"]*)\"$")
-	public void verifica_retornoEntao(String tipo) throws Exception{		
+	public void verifica_retorno(String tipo) throws Exception{		
 		//String status = Serenity.sessionVariableCalled("status").toString();		
 		//String codigoAvaliacao = Serenity.sessionVariableCalled("codigoAvaliacao").toString();		
 		siricAPI.verificaRetorno(tipo);

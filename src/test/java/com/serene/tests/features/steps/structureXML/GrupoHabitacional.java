@@ -67,5 +67,4 @@ public class GrupoHabitacional {
 	public void setCpfParticipante(String cpfParticipante){
 		this.cpfParticipante = cpfParticipante;
 	}
-
 }

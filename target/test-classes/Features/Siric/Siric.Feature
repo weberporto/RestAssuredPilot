@@ -10,7 +10,7 @@ Seguindo os seguintes critérios:
 2) Se a avaliação existir, retorna uma mensagem de validação informando que o número informado já existe
 3) Realiza o cadastro com sucesso, tanto para avaliação de risco com conjuge quanto para sem conjuge
 
- 	Esquema do Cenario: Testar novas funcionalidades
+ 	Esquema do Cenario: Tentar cadastrar avaliação SIRIC existente e verificar retorno
   
   	Dado que possuo os dados para a geração do arquivo "<tipo>" para simulação de envio via SIOPI
   	E informo todos os dados para o cadastro de uma avaliação de risco SIRIC: avaliação de risco de risco "<tReg>", "<tAval>", "<cAval>", "<iCpf>", "<cpfCnpj>", "<dVal>", "<dFim>", "<cUni>", "<cJul>", "<iVEx>", "<iPer>", "<usu>" e produto "<cProd>", "<cSis>", "<cMod>", "<vMPres>", "<vMEmp>", "<tPra>", "<pMEmp>", "<cRat>", "<cCont>", "<iRen>" e habitação "<oRec>", "<vImo>", "<cMax>" e grupo habitação "<iPap>", "<cTom>", "<rCli>", "<cPar>" e garantia "<cPGar>", "<cMGar>", "<cTGar>", "<sTGar>", "<pGar>", "<vGar>"

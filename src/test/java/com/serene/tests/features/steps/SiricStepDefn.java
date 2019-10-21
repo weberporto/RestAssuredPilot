@@ -149,15 +149,19 @@ public class SiricStepDefn {
 		siricAPI.verificaRetorno(tipo);
 	}
 	
-	@E("^ também verifico o retorno do arquivo \"([^\"]*)\"$")
+	@E("^também verifico o retorno do arquivo \"([^\"]*)\"$")
 	public void verifica_retornoE(String tipo) throws Exception{	
 		siricAPI.verificaRetorno(tipo);
 	}
 	
-	@Então("^verifico a validação da tentativa de cadastro da avaliação \"([^\"]*)\" já existente, no arquivo \"([^\"]*)\"$")
-	public void verifica_tentativa_cadastro_avaliacao_existente(String avaliacao, String tipo) throws Exception{
-		
-		siricAPI.verificaValidacaoRetorno(avaliacao, tipo);
+	@Então("^verifico a validação do campo \"([^\"]*)\" o valor \"([^\"]*)\", do arquivo \"([^\"]*)\" enviado$")
+	public void verifica_retorno_campo(String campo, String valor, String tipo) throws Exception{		
+		siricAPI.verificaValidacaoRetorno(campo, valor, tipo);
+	}
+	
+	@Então("^verifico a validação de retorno para o \"([^\"]*)\" igual a \"([^\"]*)\" já existente na base de dados, e enviado pelo arquivo \"([^\"]*)\"$")
+	public void verifica_tentativa_cadastro_avaliacao_existente(String campo, String valor, String tipo) throws Exception{		
+		siricAPI.verificaValidacaoRetorno(campo, valor, tipo);
 	}
 	
 	@Então("^verifico o retorno da avaliação com conjuge, número \"([^\"]*)\", do arquivo \"([^\"]*)\"$")

@@ -30,7 +30,6 @@ import com.serene.tests.features.steps.structureXML.Produto;
 import cucumber.deps.com.thoughtworks.xstream.XStream;
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
-import io.restassured.path.json.JsonPath;
 import io.restassured.path.xml.XmlPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
@@ -43,7 +42,7 @@ public class SiricAPISteps {
 	  //Resource
 	  String basePath = "siric/v1/incluir";	  
 	  Arquivo ler = new Arquivo();
-	  private JsonPath jp = null; 					    
+	  //private JsonPath jp = null; 					    
 	  private XmlPath xp = null; 
 	  
 	  MensagemXML mensagem = new MensagemXML();
@@ -107,70 +106,77 @@ public class SiricAPISteps {
 	  @Step
       public void verificaRetorno(String tipo){
 		  
-		if(tipo.equalsIgnoreCase("xml")){
+		//if(tipo.equalsIgnoreCase("xml")){
 			xp = res.xmlPath();
 			Assert.assertEquals("Sucesso", 200, res.getStatusCode());
 			Assert.assertEquals("654321880", xp.getString("mensagem.respostaAvaliacaoRisco.codigoAvaliacao"));
 			Assert.assertEquals("Ja existe uma avaliacao de risco com o codigo 654321880.", xp.getString("mensagem.respostaAvaliacaoRisco.mensagemValidacao"));
-		} else {
+		/*
+	  	} else {
 			JsonPath jp = res.jsonPath();
 			Assert.assertEquals("Sucesso", 200, res.getStatusCode());
 			Assert.assertEquals("654321880", jp.getString("mensagem.respostaAvaliacaoRisco.codigoAvaliacao"));
 			Assert.assertEquals("Ja existe uma avaliacao de risco com o codigo 654321880.", jp.getString("mensagem.respostaAvaliacaoRisco.mensagemValidacao"));
 		}
+		*/
       }
 
 	  @Step
-      public void verificaValidacaoRetorno(String avaliacao, String tipo){
+      public void verificaValidacaoRetorno(String campo, String valor, String tipo){
 		  
-		  if(tipo.equalsIgnoreCase("xml")){
-			  	xp = res.xmlPath();
-			  	Assert.assertEquals("Sucesso", 200, res.getStatusCode());
-			  	Assert.assertEquals(avaliacao, xp.getString("mensagem.respostaAvaliacaoRisco.codigoAvaliacao"));
-			  	Assert.assertEquals("Ja existe uma avaliacao de risco com o codigo "+ avaliacao +".", xp.getString("mensagem.respostaAvaliacaoRisco.mensagemValidacao"));
+		//if(tipo.equalsIgnoreCase("xml")){
+			  	xp = res.xmlPath();			  	
+			  	Assert.assertEquals("Sucesso", 200, res.getStatusCode());			  	
+			  	Assert.assertEquals(valor, xp.getString("mensagem.respostaAvaliacaoRisco."+campo));
+			  	Assert.assertEquals("Ja existe uma avaliacao de risco com o codigo "+ valor +".", xp.getString("mensagem.respostaAvaliacaoRisco.mensagemValidacao"));
+		  /*  	
 		  } else {
 			  	JsonPath jp = res.jsonPath();	
 			  	Assert.assertEquals("Sucesso", 200, res.getStatusCode());
-			  	Assert.assertEquals(avaliacao, jp.getString("mensagem.respostaAvaliacaoRisco.codigoAvaliacao"));
-				Assert.assertEquals("Ja existe uma avaliacao de risco com o codigo "+ avaliacao +".", jp.getString("mensagem.respostaAvaliacaoRisco.mensagemValidacao"));
+			  	Assert.assertEquals(valor, jp.getString("mensagem.respostaAvaliacaoRisco.codigoAvaliacao"));
+				Assert.assertEquals("Ja existe uma avaliacao de risco com o codigo "+ valor +".", jp.getString("mensagem.respostaAvaliacaoRisco.mensagemValidacao"));
 		  }
+		  */
 	  }
 	  
 	  //Passo de verificação de retorno
 	  @Step
 	  public void verificaRetornoComConjuge(String avaliacao, String tipo){
 		  
-		  if(tipo.equalsIgnoreCase("xml")){
+		  //if(tipo.equalsIgnoreCase("xml")){
 				xp = res.xmlPath();
 				Assert.assertEquals("Sucesso", 200, res.getStatusCode());
 				Assert.assertEquals(avaliacao, xp.getString("mensagem.respostaAvaliacaoRisco.codigoAvaliacao"));
 				Assert.assertEquals("Ja existe uma avaliacao de risco com o codigo "+ avaliacao +".", xp.getString("mensagem.respostaAvaliacaoRisco.mensagemValidacao"));
-			} else {
+			/*
+	  		} else {
 				JsonPath jp = res.jsonPath();	
 				Assert.assertEquals("Sucesso", 200, res.getStatusCode());
 				Assert.assertEquals(avaliacao, jp.getString("mensagem.respostaAvaliacaoRisco.codigoAvaliacao"));
 				Assert.assertEquals("Ja existe uma avaliacao de risco com o codigo "+ avaliacao +".", jp.getString("mensagem.respostaAvaliacaoRisco.mensagemValidacao"));
 			}
+			*/
 	  }
 	  
 	  //Passo de verificação de retorno
 	  @Step
 	  public void verificaRetornoSemConjuge(String avaliacao, String tipo){
 		  
-		  if(tipo.equalsIgnoreCase("xml")){
+		  //if(tipo.equalsIgnoreCase("xml")){
 				xp = res.xmlPath();
 				Assert.assertEquals("Sucesso", 200, res.getStatusCode());
 				Assert.assertEquals(avaliacao, xp.getString("mensagem.respostaAvaliacaoRisco.codigoAvaliacao"));
 				Assert.assertEquals("Ja existe uma avaliacao de risco com o codigo "+ avaliacao +".", xp.getString("mensagem.respostaAvaliacaoRisco.mensagemValidacao"));
-			} else {
+			/*
+	  		} else {
 				jp = res.jsonPath();	
 				Assert.assertEquals("Sucesso", 200, res.getStatusCode());
 				Assert.assertEquals(avaliacao, jp.getString("mensagem.respostaAvaliacaoRisco.codigoAvaliacao"));
 				Assert.assertEquals("Ja existe uma avaliacao de risco com o codigo "+ avaliacao +".", jp.getString("mensagem.respostaAvaliacaoRisco.mensagemValidacao"));
 			}
+			*/
 	  }
-	  
-	  //Passo de verificação de retorno
+
 	  @Step
 	  public void verificaAcessoServicoSucesso(){		  
 		  Assert.assertEquals("Sucesso", 200, res.getStatusCode());

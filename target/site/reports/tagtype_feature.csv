@@ -1,6 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"Cadastramento de avaliação SIRIC","Tentar cadastrar avaliação SIRIC existente e verificar retorno","SUCCESS","2019-10-21T15:34:10.996-03:00[America/Sao_Paulo]","0.0","3.22"
-"Cadastramento de avaliação SIRIC","Cadastrar avaliação","SUCCESS","2019-10-21T15:34:14.22-03:00[America/Sao_Paulo]","0.0","0.37"
-"Cadastramento de avaliação SIRIC","Cadastrar avaliação existente","SUCCESS","2019-10-21T15:34:14.593-03:00[America/Sao_Paulo]","0.0","0.3"
-"Cadastramento de avaliação SIRIC","Cadastrar avaliação com conjuge","SUCCESS","2019-10-21T15:34:14.898-03:00[America/Sao_Paulo]","0.0","0.24"
-"Cadastramento de avaliação SIRIC","Cadastrar avaliação sem conjuge","SUCCESS","2019-10-21T15:34:15.135-03:00[America/Sao_Paulo]","0.0","0.25"
